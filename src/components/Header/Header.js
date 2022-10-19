@@ -1,6 +1,7 @@
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import React from 'react'
 import logo from '../../assets/images/res-logo.png'
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Header = () => {
     return (
@@ -43,6 +44,7 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
                     <a href='/' className="btn btn-ghost font-bold normal-case text-2xl"><ShoppingBasketIcon /></a>
+                    <a href='/' className="btn btn-ghost font-bold normal-case text-2xl"><AccountCircleIcon /></a>
                 </div>
             </div>
         </div>
