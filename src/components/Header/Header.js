@@ -36,6 +36,7 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
                     <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><ShoppingBasketIcon /> <sup >0</sup></Link>
+
                     <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><AccountCircleIcon /></Link>
                 </div>
             </div>

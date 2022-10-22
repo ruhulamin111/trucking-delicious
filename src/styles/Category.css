@@ -1,0 +1,22 @@
+.category_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.category_section_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    background-color: lightpink;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.category_section_item:hover {
+    transform: translateY(-15px);
+}
