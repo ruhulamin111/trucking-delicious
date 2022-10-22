@@ -8,6 +8,7 @@ import '../styles/Home.css'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Info from '../components/UI/Info/Info';
 import Service from '../components/UI/Service/Service';
+import AllFoods from './AllFoods';
 
 const Home = () => {
 
@@ -39,6 +40,10 @@ const Home = () => {
             </section>
             <section>
                 <Service />
+            </section>
+
+            <section>
+                <AllFoods />
             </section>
 
         </Helmet>

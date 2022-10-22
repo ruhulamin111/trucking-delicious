@@ -1,8 +1,14 @@
 import React from 'react'
+import '../styles/AllFoods.css'
 
 const AllFoods = () => {
     return (
-        <div>AllFoods</div>
+        <div>
+            <div className='food_list'>
+
+            </div>
+
+        </div>
     )
 }
 
