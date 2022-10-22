@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <div className="navbar font-semibold text-lg h-20 border-b-2">
+            <div className="navbar font-semibold text-lg h-20 border-b-2 mb-5">
                 {/* small screen */}
                 <div className="navbar-start">
                     <div className="dropdown">
