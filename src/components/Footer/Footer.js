@@ -12,7 +12,7 @@ const Footer = () => {
 
     return (
         <div>
-            <footer className="footer text-base-content border-t-2 py-5 mt-5">
+            <footer className="footer text-base-content border-t-2 py-5 my-5">
                 <div>
                     <img src={logo} alt="" className='h-20 mb-4' />
                     <p>Trucking Delicious Resturant<br />

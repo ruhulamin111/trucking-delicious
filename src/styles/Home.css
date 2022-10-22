@@ -1,0 +1,69 @@
+.home_container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5rem;
+    height: 100vh;
+}
+
+.home_container img {
+    width: 100%;
+}
+
+.home_subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.home_title span {
+    font-size: 3rem;
+    font-weight: 900;
+    color: deeppink;
+}
+
+.home_title {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.home_text {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.home_button {
+    padding: 8px;
+    margin-top: 15px;
+    background-color: deeppink;
+    border-radius: 8px;
+    color: white;
+    transition: .5s;
+}
+
+.home_button:hover {
+    background-color: darkmagenta;
+    transform: translate(10px);
+}
+
+.home_button_section {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.home_info_section {
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.home_info_section p {
+    font-size: 15px;
+}
+
+.home_info_section span {
+    color: deeppink;
+    font-size: 20px;
+    margin-right: 10px;
+}
