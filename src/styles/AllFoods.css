@@ -1,0 +1,31 @@
+.food_list {
+    background-color: lightpink;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 1.5rem 0;
+}
+
+.food_list_item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.food_list_item img {
+    height: 2rem;
+}
+
+.active_food {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.all_food_section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
