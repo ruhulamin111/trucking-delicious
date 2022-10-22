@@ -1,13 +1,13 @@
 .home_container {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     gap: 5rem;
     height: 100vh;
 }
 
 .home_container img {
-    width: 100%;
+    width: 80%;
 }
 
 .home_subtitle {

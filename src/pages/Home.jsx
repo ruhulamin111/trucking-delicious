@@ -6,12 +6,14 @@ import GppGoodIcon from '@mui/icons-material/GppGood';
 import Category from '../components/UI/Category/Category';
 import '../styles/Home.css'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import Info from '../components/UI/Info/Info';
+import Service from '../components/UI/Service/Service';
 
 const Home = () => {
 
     return (
         <Helmet title='Home'>
-            <div className='home_container'>
+            <section className='home_container'>
                 <div className=''>
                     <h1 className='home_subtitle'>Easy way to make an order</h1>
                     <h1 className='home_title'><span>Hungry!</span> <br /> just wait food at your home</h1>
@@ -28,8 +30,17 @@ const Home = () => {
                 <div>
                     <img className='' src={logo} alt="" />
                 </div>
-            </div>
-            <Category />
+            </section>
+            <section>
+                <Category />
+            </section>
+            <section>
+                <Info />
+            </section>
+            <section>
+                <Service />
+            </section>
+
         </Helmet>
     )
 }
