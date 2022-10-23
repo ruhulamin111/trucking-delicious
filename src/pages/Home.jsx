@@ -11,9 +11,9 @@ import Service from '../components/UI/Service/Service';
 import AllFoods from './AllFoods';
 import QAPart from '../components/UI/QAPart/QAPart';
 import HotPizza from '../components/UI/HotPizza/HotPizza';
+import Testimonial from '../components/UI/Testimonial/Testimonial';
 
 const Home = () => {
-
 
     return (
         <Helmet title='Home'>
@@ -53,6 +53,9 @@ const Home = () => {
             </section>
             <section>
                 <HotPizza />
+            </section>
+            <section>
+                <Testimonial />
             </section>
 
         </Helmet>
