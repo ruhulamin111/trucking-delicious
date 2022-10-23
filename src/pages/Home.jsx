@@ -12,6 +12,7 @@ import AllFoods from './AllFoods';
 import QAPart from '../components/UI/QAPart/QAPart';
 import HotPizza from '../components/UI/HotPizza/HotPizza';
 import Testimonial from '../components/UI/Testimonial/Testimonial';
+import Client from '../components/UI/Client/Client';
 
 const Home = () => {
 
@@ -56,6 +57,7 @@ const Home = () => {
             </section>
             <section>
                 <Testimonial />
+                <Client />
             </section>
 
         </Helmet>

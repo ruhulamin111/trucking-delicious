@@ -1,0 +1,25 @@
+.client_section {
+    margin: 3rem 0;
+    cursor: pointer;
+}
+
+.client_title {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.client_avatar img {
+    /* border-radius: 50%; */
+    border-radius: 1rem;
+    width: 50%;
+    border: 1px solid lightblue;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.client_text {
+    font-size: 15px;
+    line-height: 2rem;
+}
