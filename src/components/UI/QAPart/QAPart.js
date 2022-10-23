@@ -2,7 +2,6 @@ import React from 'react'
 import qaimg from '../../../assets/images/location.png'
 import '../../../styles/QAPart.css'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import { Check } from '@mui/icons-material';
 
 const QAPart = () => {
 

@@ -10,6 +10,7 @@ import Info from '../components/UI/Info/Info';
 import Service from '../components/UI/Service/Service';
 import AllFoods from './AllFoods';
 import QAPart from '../components/UI/QAPart/QAPart';
+import HotPizza from '../components/UI/HotPizza/HotPizza';
 
 const Home = () => {
 
@@ -49,6 +50,9 @@ const Home = () => {
             </section>
             <section>
                 <QAPart />
+            </section>
+            <section>
+                <HotPizza />
             </section>
 
         </Helmet>

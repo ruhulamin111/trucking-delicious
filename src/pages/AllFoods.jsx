@@ -50,11 +50,10 @@ const AllFoods = () => {
             <div className='all_food_section'>
                 {
                     allProduct.map((item, i) =>
-                        <FoodCard item={item} />
+                        <FoodCard key={i} item={item} />
                     )
                 }
             </div>
-
         </div>
     )
 }
