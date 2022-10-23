@@ -1,33 +1,55 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/AllFoods.css'
 import category1 from '../assets/images/hamburger.png'
 import category2 from '../assets/images/pizza.png'
 import category3 from '../assets/images/bread.png'
-import { ProductionQuantityLimits } from '@mui/icons-material'
 import data from '../assets/fake-data/products'
 import FoodCard from '../components/UI/FoodCard/FoodCard'
 
 const AllFoods = () => {
+    const [category, setCategory] = useState('All')
+    const [allProduct, setAllProduct] = useState(data)
+
+    useEffect(() => {
+        if (category === 'All') {
+            setAllProduct(data)
+        }
+        if (category === 'Burger') {
+            const filtered = data.filter(item => item.category === 'Burger')
+            setAllProduct(filtered)
+        }
+        if (category === 'Pizza') {
+            const filtered = data.filter(item => item.category === 'Pizza')
+            setAllProduct(filtered)
+        }
+        if (category === 'Bread') {
+            const filtered = data.filter(item => item.category === 'Bread')
+            setAllProduct(filtered)
+        }
+
+    }, [category])
+
+
     return (
         <div>
             <div className='food_list'>
-                <button className='active_food'>All</button>
-                <button className='food_list_item'>
+                <button className='active_food' onClick={() => setCategory('All')}>All</button>
+                <button className='food_list_item' onClick={() => setCategory('Burger')} >
                     <img src={category1} alt="" />
                     Burger
                 </button>
-                <button className='food_list_item'>
+                <button className='food_list_item' onClick={() => setCategory('Pizza')}>
                     <img src={category2} alt="" />
                     Pizza
                 </button>
-                <button className='food_list_item'>
+                <button className='food_list_item' onClick={() => setCategory('Bread')}>
                     <img src={category3} alt="" />
                     Bread
                 </button>
             </div>
             <div className='all_food_section'>
                 {
-                    data.map((item, i) =>
+                    allProduct.map((item, i) =>
                         <FoodCard item={item} />
                     )
                 }

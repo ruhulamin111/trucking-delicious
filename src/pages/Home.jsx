@@ -12,6 +12,7 @@ import AllFoods from './AllFoods';
 
 const Home = () => {
 
+
     return (
         <Helmet title='Home'>
             <section className='home_container'>
