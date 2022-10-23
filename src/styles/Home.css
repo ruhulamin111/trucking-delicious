@@ -121,5 +121,18 @@
         grid-template-columns: 1fr;
     }
 
+    .qa_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .client_section {
+        display: none;
+    }
+
+    .testimonial_section {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
