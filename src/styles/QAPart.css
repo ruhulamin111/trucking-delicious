@@ -1,0 +1,29 @@
+.qa_section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.qa_img img {
+    width: 100%;
+}
+
+.qa_title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.qa_item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+.qa_item i {
+    color: deeppink;
+}

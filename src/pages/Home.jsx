@@ -9,6 +9,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Info from '../components/UI/Info/Info';
 import Service from '../components/UI/Service/Service';
 import AllFoods from './AllFoods';
+import QAPart from '../components/UI/QAPart/QAPart';
 
 const Home = () => {
 
@@ -45,6 +46,9 @@ const Home = () => {
 
             <section>
                 <AllFoods />
+            </section>
+            <section>
+                <QAPart />
             </section>
 
         </Helmet>

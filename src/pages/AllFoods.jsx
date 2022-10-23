@@ -33,16 +33,16 @@ const AllFoods = () => {
     return (
         <div>
             <div className='food_list'>
-                <button className='active_food' onClick={() => setCategory('All')}>All</button>
-                <button className='food_list_item' onClick={() => setCategory('Burger')} >
+                <button className={`${category === 'All' ? 'active_food' : ''}`} onClick={() => setCategory('All')}>All</button>
+                <button className={`food_list_item ${category === 'Burger' ? 'active_food' : ''}`} onClick={() => setCategory('Burger')} >
                     <img src={category1} alt="" />
                     Burger
                 </button>
-                <button className='food_list_item' onClick={() => setCategory('Pizza')}>
+                <button className={`food_list_item ${category === 'Pizza' ? 'active_food' : ''}`} onClick={() => setCategory('Pizza')}>
                     <img src={category2} alt="" />
                     Pizza
                 </button>
-                <button className='food_list_item' onClick={() => setCategory('Bread')}>
+                <button className={`food_list_item ${category === 'Bread' ? 'active_food' : ''}`} onClick={() => setCategory('Bread')}>
                     <img src={category3} alt="" />
                     Bread
                 </button>
