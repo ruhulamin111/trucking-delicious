@@ -21,7 +21,8 @@ const Client = () => {
                         <img src={avatar1} alt="" />
                     </div>
                     <div className='client_text'>
-                        <p>Web Developer</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia eveniet provident adipisci voluptas fuga vel ducimus minima voluptatem repellat.</p>
+                        <h1>Web Developer</h1>
                         <em>John knedy</em>
                     </div>
                 </SwiperSlide>
@@ -30,7 +31,8 @@ const Client = () => {
                         <img src={avatar2} alt="" />
                     </div>
                     <div className='client_text'>
-                        <p>Web Developer</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia eveniet provident adipisci voluptas fuga vel ducimus minima voluptatem repellat.</p>
+                        <h1>Web Developer</h1>
                         <em>John knedy</em>
                     </div>
                 </SwiperSlide>
@@ -39,7 +41,8 @@ const Client = () => {
                         <img src={avatar3} alt="" />
                     </div>
                     <div className='client_text'>
-                        <p>Web Developer</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia eveniet provident adipisci voluptas fuga vel ducimus minima voluptatem repellat.</p>
+                        <h1>Web Developer</h1>
                         <em>John knedy</em>
                     </div>
                 </SwiperSlide>
@@ -48,7 +51,18 @@ const Client = () => {
                         <img src={avatar4} alt="" />
                     </div>
                     <div className='client_text'>
-                        <p>Web Developer</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia eveniet provident adipisci voluptas fuga vel ducimus minima voluptatem repellat.</p>
+                        <h1>Web Developer</h1>
+                        <em>John knedy</em>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='client_avatar'>
+                        <img src={avatar1} alt="" />
+                    </div>
+                    <div className='client_text'>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia eveniet provident adipisci voluptas fuga vel ducimus minima voluptatem repellat.</p>
+                        <h1>Web Developer</h1>
                         <em>John knedy</em>
                     </div>
                 </SwiperSlide>

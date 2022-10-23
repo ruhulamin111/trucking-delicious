@@ -36,29 +36,14 @@ const Home = () => {
                     <img className='' src={logo} alt="" />
                 </div>
             </section>
-            <section>
-                <Category />
-            </section>
-            <section>
-                <Info />
-            </section>
-            <section>
-                <Service />
-            </section>
-
-            <section>
-                <AllFoods />
-            </section>
-            <section>
-                <QAPart />
-            </section>
-            <section>
-                <HotPizza />
-            </section>
-            <section>
-                <Testimonial />
-                <Client />
-            </section>
+            <Category />
+            <Info />
+            <Service />
+            <AllFoods />
+            <QAPart />
+            <HotPizza />
+            <Testimonial />
+            <Client />
 
         </Helmet>
     )

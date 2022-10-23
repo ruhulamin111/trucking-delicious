@@ -1,3 +1,6 @@
+/* primary ff4d6d */
+/* secondary c9184a */
+/* tertiary ffb3c1 */
 .home_container {
     display: flex;
     justify-content: space-between;
@@ -7,7 +10,7 @@
 }
 
 .home_container img {
-    width: 80%;
+    width: 100%;
 }
 
 .home_subtitle {
@@ -18,7 +21,7 @@
 .home_title span {
     font-size: 3rem;
     font-weight: 900;
-    color: deeppink;
+    color: #ff4d6d;
 }
 
 .home_title {
@@ -35,14 +38,14 @@
 .home_button {
     padding: 8px;
     margin-top: 15px;
-    background-color: deeppink;
+    background-color: #ff4d6d;
     border-radius: 8px;
     color: white;
     transition: .5s;
 }
 
 .home_button:hover {
-    background-color: darkmagenta;
+    background-color: #c9184a;
     transform: translate(10px);
 }
 
@@ -63,7 +66,60 @@
 }
 
 .home_info_section span {
-    color: deeppink;
+    color: #ff4d6d;
     font-size: 20px;
     margin-right: 10px;
+}
+
+@media only screen and (max-width:768px) {
+    .home_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+        height: 100vh;
+    }
+
+    .home_subtitle {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .home_title span {
+        font-size: 2rem;
+        font-weight: 900;
+        color: #ff4d6d;
+    }
+
+    .home_title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .category_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        gap: 3rem;
+        margin-top: 5rem;
+    }
+
+    .service_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food_list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all_food_section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
 }

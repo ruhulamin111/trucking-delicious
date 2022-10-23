@@ -12,7 +12,7 @@ const Header = () => {
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
 
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
@@ -20,10 +20,12 @@ const Header = () => {
                             <li ><Link to='/' className='hover:bg-red-200'>Foods </Link></li>
                             <li ><Link to='/' className='hover:bg-red-200'>Cart</Link></li>
                             <li ><Link to='/' className='hover:bg-red-200'>Contact </Link></li>
+                            <li ><Link to='/' className="font-bold normal-case text-2xl"><ShoppingBasketIcon /> <sup >0</sup></Link></li>
+                            <li ><Link to='/' className=" font-bold normal-case text-2xl"><AccountCircleIcon /></Link></li>
                         </ul>
                     </div>
-                    <img src={logo} alt="" className='h-12' />
-                    <Link to='/' className="btn btn-ghost font-extrabold normal-case text-2xl">Trucking Delicious</Link>
+                    <img src={logo} alt="" className='h-12 ' />
+                    <Link to='/' className="btn btn-ghost font-extrabold normal-case lg:text-2xl ">Trucking Delicious</Link>
                 </div>
                 {/* large screen */}
                 <div className="navbar-center hidden lg:flex">
@@ -36,7 +38,6 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
                     <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><ShoppingBasketIcon /> <sup >0</sup></Link>
-
                     <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><AccountCircleIcon /></Link>
                 </div>
             </div>
