@@ -10,11 +10,15 @@ import '../styles/Foods.css'
 const Foods = () => {
     const [searchTerm, setSearchTerm] = useState('')
     // const [productData, setProductData] = useState(products)
+    const searchedProduct = products.filter((item) => {
+        if (searchTerm.value === '') return item;
+        if (item.title.toLowerCase().includes(searchTerm.toLowerCase())) return item
+    })
     const [pageNumber, setPageNumber] = useState(0)
     const productPerPage = 8
     const visitedPage = pageNumber * productPerPage
-    const displayPage = products.slice(visitedPage, visitedPage + productPerPage)
-    const pageCount = Math.ceil(products.length / productPerPage)
+    const displayPage = searchedProduct.slice(visitedPage, visitedPage + productPerPage)
+    const pageCount = Math.ceil(searchedProduct.length / productPerPage)
     const changePage = ({ selected }) => {
         setPageNumber(selected)
     }
@@ -40,16 +44,8 @@ const Foods = () => {
                     </div>
                 </div>
                 <div className="all_food_section">
-
                     {
-                        displayPage?.filter((item => {
-                            if (searchTerm.value === '') {
-                                return item
-                            }
-                            if (item.title.toLowerCase().includes(searchTerm.toLowerCase())) {
-                                return item
-                            }
-                        })).map(item => <FoodCard key={item.id} item={item} />)
+                        displayPage.map(item => <FoodCard key={item.id} item={item} />)
                     }
                 </div>
                 <div>
