@@ -1,0 +1,27 @@
+.foods_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.search_widget {
+    padding: 5px;
+    border: 1px solid lightpink;
+    border-radius: 10px;
+}
+
+.search_widget input {
+    border: none;
+}
+
+.search_widget span {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.sorting_widget {
+    padding: 5px;
+    border: 1px solid lightpink;
+    border-radius: 10px;
+}

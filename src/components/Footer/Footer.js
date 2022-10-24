@@ -11,8 +11,8 @@ const Footer = () => {
     const year = new Date().getFullYear()
 
     return (
-        <div>
-            <footer className="footer text-base-content border-t-2 py-5 my-5">
+        <div className='my-5'>
+            <footer className="footer text-base-content border-t-2 py-5 my-4">
                 <div>
                     <img src={logo} alt="" className='h-20 mb-4' />
                     <p>Trucking Delicious Resturant<br />
