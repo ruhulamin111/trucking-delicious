@@ -1,5 +1,5 @@
 import { SearchOutlined } from '@mui/icons-material'
-import React from 'react'
+import React, { useState } from 'react'
 import products from '../assets/fake-data/products'
 import Helmet from '../components/Helmet/Helmet'
 import CommonSection from '../components/UI/CommonSection/CommonSection'
@@ -7,13 +7,16 @@ import FoodCard from '../components/UI/FoodCard/FoodCard'
 import '../styles/Foods.css'
 
 const Foods = () => {
+    const [searchTerm, setSearchTerm] = useState('')
+    const [productData, setProductData] = useState(products)
+
     return (
         <Helmet title="All Foods">
             <CommonSection />
             <section className="">
                 <div className="foods_section">
                     <div className="search_widget ">
-                        <input className='p-2 ' type="text" placeholder="I am looking for ..." />
+                        <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className='p-2 ' type="text" placeholder="I am looking for ..." />
                         <span><SearchOutlined /></span>
                     </div>
                     <div className="sorting_widget">
@@ -29,7 +32,14 @@ const Foods = () => {
                 <div className="all_food_section">
 
                     {
-                        products.map(item => <FoodCard key={item.id} item={item} />)
+                        productData?.filter((item => {
+                            if (searchTerm.value === '') {
+                                return item
+                            }
+                            if (item.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+                                return item
+                            }
+                        })).map(item => <FoodCard key={item.id} item={item} />)
                     }
                 </div>
 
