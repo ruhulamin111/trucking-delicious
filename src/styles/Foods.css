@@ -26,3 +26,25 @@
     border: 1px solid lightpink;
     border-radius: 10px;
 }
+
+.paginationButtons {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 50px;
+    list-style: none;
+    column-gap: 2rem;
+}
+
+.paginationButtons a {
+    background-color: lightpink;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

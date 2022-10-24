@@ -1,5 +1,6 @@
 import { SearchOutlined } from '@mui/icons-material'
 import React, { useState } from 'react'
+import ReactPaginate from 'react-paginate'
 import products from '../assets/fake-data/products'
 import Helmet from '../components/Helmet/Helmet'
 import CommonSection from '../components/UI/CommonSection/CommonSection'
@@ -8,7 +9,16 @@ import '../styles/Foods.css'
 
 const Foods = () => {
     const [searchTerm, setSearchTerm] = useState('')
-    const [productData, setProductData] = useState(products)
+    // const [productData, setProductData] = useState(products)
+    const [pageNumber, setPageNumber] = useState(0)
+    const productPerPage = 8
+    const visitedPage = pageNumber * productPerPage
+    const displayPage = products.slice(visitedPage, visitedPage + productPerPage)
+    const pageCount = Math.ceil(products.length / productPerPage)
+    const changePage = ({ selected }) => {
+        setPageNumber(selected)
+    }
+
 
     return (
         <Helmet title="All Foods">
@@ -32,7 +42,7 @@ const Foods = () => {
                 <div className="all_food_section">
 
                     {
-                        productData?.filter((item => {
+                        displayPage?.filter((item => {
                             if (searchTerm.value === '') {
                                 return item
                             }
@@ -41,6 +51,17 @@ const Foods = () => {
                             }
                         })).map(item => <FoodCard key={item.id} item={item} />)
                     }
+                </div>
+                <div>
+                    <ReactPaginate
+                        breakLabel="..."
+                        previousLabel="< Previous"
+                        nextLabel="Next >"
+                        onPageChange={changePage}
+                        pageRangeDisplayed={5}
+                        containerClassName='paginationButtons'
+                        pageCount={pageCount}
+                        renderOnZeroPageCount={null} />
                 </div>
 
             </section>
