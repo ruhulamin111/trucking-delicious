@@ -3,10 +3,15 @@ import logo from '../../assets/images/res-logo.png'
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { cartUIActions } from '../../store/shoppingCart/cartUISlice';
 
 const Header = () => {
     const totalQuantity = useSelector(state => state.cart.totalQuantity)
+    const disPatch = useDispatch()
+    const toggleCart = () => {
+        disPatch(cartUIActions.toggle())
+    }
 
     return (
         <div className='sticky top-0 bg-slate-50'>
@@ -40,8 +45,11 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><ShoppingBasketIcon /> <sup className='bg-[#ff4d6d] px-2 text-sm text-white rounded-full' >{totalQuantity}</sup></Link>
-                    <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><AccountCircleIcon /></Link>
+                    <span onClick={toggleCart} className="btn btn-ghost font-bold normal-case text-2xl">
+                        <ShoppingBasketIcon />
+                        <sup className='bg-[#ff4d6d] px-2 text-sm text-white rounded-full' >{totalQuantity}</sup>
+                    </span>
+                    <span className="btn btn-ghost font-bold normal-case text-2xl"><AccountCircleIcon /></span>
                 </div>
             </div>
         </div>
