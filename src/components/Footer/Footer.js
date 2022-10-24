@@ -42,8 +42,8 @@ const Footer = () => {
                             <span className="label-text">Enter your email address</span>
                         </label>
                         <div className="relative">
-                            <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" />
-                            <button className="btn btn-primary absolute top-0 right-0 rounded-l-none ">Subscribe  <span className='ml-2'> <SendIcon /></span></button>
+                            <input type="text" placeholder="username@site.com" className="input input-bordered  w-full pr-16" />
+                            <button className="btn  bg-[#ff4d6d] border-[#ff4d6d] absolute top-0 right-0 rounded-l-none hover:bg-[#c9184a] hover:border-[#c9184a]">Subscribe  <span className='ml-2'> <SendIcon /></span></button>
                         </div>
                     </div>
                 </div>
