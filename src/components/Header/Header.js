@@ -3,8 +3,11 @@ import logo from '../../assets/images/res-logo.png'
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
+    const totalQuantity = useSelector(state => state.cart.totalQuantity)
+
     return (
         <div>
             <div className="navbar font-semibold text-lg h-20 border-b-2 mb-5">
@@ -37,7 +40,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><ShoppingBasketIcon /> <sup >0</sup></Link>
+                    <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><ShoppingBasketIcon /> <sup >{totalQuantity}</sup></Link>
                     <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><AccountCircleIcon /></Link>
                 </div>
             </div>

@@ -75,10 +75,6 @@
     .home_container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 5rem;
-        height: 100vh;
     }
 
     .home_subtitle {
@@ -100,10 +96,7 @@
     .category_section {
         display: flex;
         flex-direction: column;
-        justify-content: start;
         align-items: flex-start;
-        gap: 3rem;
-        margin-top: 5rem;
     }
 
     .service_section {
@@ -115,6 +108,7 @@
         display: flex;
         flex-direction: column;
     }
+
 
     .all_food_section {
         display: grid;
