@@ -9,8 +9,8 @@ const Header = () => {
     const totalQuantity = useSelector(state => state.cart.totalQuantity)
 
     return (
-        <div>
-            <div className="navbar font-semibold text-lg h-20 border-b-2 mb-5">
+        <div className='sticky top-0 bg-slate-50'>
+            <div className="navbar font-semibold text-lg h-20 border-b-2 mb-5 ">
                 {/* small screen */}
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -40,7 +40,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><ShoppingBasketIcon /> <sup >{totalQuantity}</sup></Link>
+                    <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><ShoppingBasketIcon /> <sup className='bg-[#ff4d6d] px-2 text-sm text-white rounded-full' >{totalQuantity}</sup></Link>
                     <Link to='/' className="btn btn-ghost font-bold normal-case text-2xl"><AccountCircleIcon /></Link>
                 </div>
             </div>
