@@ -30,7 +30,6 @@ const cartSlice = createSlice({
                     total + Number(item.price) * Number(item.quantity)
                 ))
             }
-
         }
     }
 })
