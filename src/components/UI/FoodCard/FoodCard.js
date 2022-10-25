@@ -19,10 +19,12 @@ const FoodCard = ({ item }) => {
     return (
         <div className='food_card_item'>
             <div className='food_card_item_img'>
-                <img src={image01} alt="" />
+                <Link to={`/foods/${id}`} >
+                    <img src={image01} alt="" />
+                </Link>
             </div>
             <div className='food_card_item_title'>
-                <h5><Link to={`/foods/${id}`} >{title}</Link></h5>
+                <h5>{title}</h5>
             </div>
             <div className='food_card_item_price'>
                 <span>$ {price}</span>
