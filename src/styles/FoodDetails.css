@@ -121,3 +121,18 @@
     font-weight: bold;
     font-size: 2rem;
 }
+
+@media only screen and (max-width:768px) {
+    .food_details_section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .tab {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+
+}

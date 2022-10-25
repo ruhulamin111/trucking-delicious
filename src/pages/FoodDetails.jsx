@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Helmet from '../components/Helmet/Helmet'
 import CommonSection from '../components/UI/CommonSection/CommonSection'
 import img1 from '../assets/images/product_01.1.jpg'
@@ -17,6 +17,9 @@ const FoodDetails = () => {
     const [previewImg, setPreviewImg] = useState(product.image01)
     const relatedProduct = products.filter(item => category === item.category)
     const disPatch = useDispatch()
+    useEffect(() => {
+        setPreviewImg(product.image01)
+    }, [product])
     const addToCart = () => {
         disPatch(cartActions.addItem({
             id,
@@ -25,7 +28,13 @@ const FoodDetails = () => {
             price
         }))
     }
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+    const handleSubmit = (e) => {
+        e.preventDefault()
 
+    }
     return (
         <Helmet title='Food Details'>
             <CommonSection title={title} />
@@ -78,15 +87,15 @@ const FoodDetails = () => {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iste.</p>
                             </div>
                             <div className="form">
-                                <form                    >
+                                <form onSubmit={handleSubmit}>
                                     <div className="form_group">
-                                        <input type="text" name="" id="" placeholder='Enter your name' />
+                                        <input type="text" name="" id="" placeholder='Enter your name' onChange={(e) => setName(e.target.value)} required />
                                     </div>
                                     <div className="form_group">
-                                        <input type="email" name="" id="" placeholder='Enter your email' />
+                                        <input type="email" name="" id="" placeholder='Enter your email' onChange={(e) => setEmail(e.target.value)} required />
                                     </div>
                                     <div className="form_group">
-                                        <textarea type="text" name="" id="" placeholder='Enter your comments' />
+                                        <textarea rows={5} type="text" name="" id="" placeholder='Enter your comments' onChange={(e) => setMessage(e.target.value)} required />
                                     </div>
                                     <input className='message_button' type="submit" value="Send message" />
                                 </form>
