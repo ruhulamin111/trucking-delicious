@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Helmet from '../components/Helmet/Helmet'
 import CommonSection from '../components/UI/CommonSection/CommonSection'
-import img1 from '../assets/images/product_01.1.jpg'
 import '../styles/FoodDetails.css'
 import { useParams } from 'react-router-dom'
 import products from '../assets/fake-data/products'
@@ -33,7 +32,7 @@ const FoodDetails = () => {
     const [message, setMessage] = useState('')
     const handleSubmit = (e) => {
         e.preventDefault()
-
+        console.log(name, email, message)
     }
     return (
         <Helmet title='Food Details'>
