@@ -10,8 +10,8 @@ import '../styles/Foods.css'
 const Foods = () => {
     const [searchTerm, setSearchTerm] = useState('')
     // const [productData, setProductData] = useState(products)
-    const searchedProduct = products.filter((item) => {
-        if (searchTerm.value === '') return item;
+    const searchedProduct = products.filter(item => {
+        if (searchTerm.value === '') return item
         if (item.title.toLowerCase().includes(searchTerm.toLowerCase())) return item
     })
     const [pageNumber, setPageNumber] = useState(0)
