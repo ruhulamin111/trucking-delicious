@@ -35,3 +35,62 @@
 .single_product_content button {
     margin-top: 3rem;
 }
+
+.tab {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: .8rem;
+}
+
+.active_tab {
+    color: #ff4d6d;
+}
+
+.tab_content {
+    padding: 1.5rem 0;
+    line-height: 1.8rem;
+}
+
+.form {
+    width: 60%;
+    margin: auto;
+    background-color: lightpink;
+    border-radius: 10px;
+}
+
+.form form {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.form_group input,
+.form_group textarea {
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid whitesmoke;
+    padding: 10px 0;
+}
+
+.form_group input::placeholder,
+.form_group textarea::placeholder {
+    color: black;
+}
+
+.message_button {
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    color: #ff4d6d;
+}
