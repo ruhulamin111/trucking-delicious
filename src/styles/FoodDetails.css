@@ -1,11 +1,22 @@
+.food_section {
+    margin: 3rem 0;
+}
+
 .food_details_section {
     display: grid;
     grid-template-columns: 20% 40% 40%;
     justify-content: space-between;
 }
 
+.product_img {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .img_item img {
     width: 50%;
+    cursor: pointer;
 }
 
 .product_title {
@@ -104,4 +115,9 @@
 .review_mail {
     font-style: italic;
     margin-bottom: .5rem;
+}
+
+.related_title {
+    font-weight: bold;
+    font-size: 2rem;
 }
