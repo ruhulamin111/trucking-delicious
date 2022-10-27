@@ -5,6 +5,7 @@ import '../styles/Cart.css'
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../store/shoppingCart/cartSlice';
+import { Link } from 'react-router-dom';
 
 
 const Cart = () => {
@@ -46,6 +47,12 @@ const Cart = () => {
                 </section>
                 <div>
                     <h1>Subtotal: $ <span>{totalAmount}</span></h1>
+                    <p className='my-2'>Taxes and shipping will calculate at checkout</p>
+                    <div className='flex gap-5'>
+                        <button className="home_button"><Link to='/foods'>Continue shopping</Link></button>
+                        <button className="home_button"><Link to='/checkout'>Proceed to checkout</Link></button>
+
+                    </div>
                 </div>
             </section>
         </Helmet>

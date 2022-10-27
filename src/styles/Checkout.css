@@ -1,0 +1,18 @@
+.form_checkout input {
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+.checkout_form {
+    width: 60%;
+    padding: 2rem 0;
+}
+
+.checkout_title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
