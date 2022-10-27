@@ -1,3 +1,14 @@
+.checkout_section {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 2rem;
+}
+
+.checkout_form {
+    padding: 2rem 0;
+}
+
+
 .form_checkout input {
     width: 100%;
     background-color: transparent;
@@ -6,13 +17,28 @@
     padding: 10px 0;
 }
 
-.checkout_form {
-    width: 60%;
-    padding: 2rem 0;
-}
-
 .checkout_title {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+
+
+.checkout_bill {
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    background-color: lightpink;
+    height: 40%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.checkout_bill h2 {
+    font-size: 1.2rem;
+}
+
+.checkout_bill span {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #ff4d6d;
 }
