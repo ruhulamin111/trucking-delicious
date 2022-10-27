@@ -5,18 +5,15 @@ import CommonSection from '../components/UI/CommonSection/CommonSection'
 import '../styles/Signin.css'
 
 const Signin = () => {
-    const shippingInfo = []
+    const userInfo = []
     const handleSubmit = (event) => {
         event.preventDefault()
-        const userInfo = {
-            name: event.target.name.value,
+        const visitor = {
             email: event.target.email.value,
-            phone: event.target.phone.value,
-            country: event.target.country.value,
-            code: event.target.code.value,
-            city: event.target.city.value,
+            password: event.target.password.value,
+
         }
-        shippingInfo.push(userInfo)
+        userInfo.push(visitor)
     }
 
     return (
@@ -27,15 +24,15 @@ const Signin = () => {
                 <div className="singin_part">
                     <form onSubmit={handleSubmit}>
                         <div className="form_signin">
-                            <input name='name' type="text" placeholder='Enter your name' required />
-                        </div>
-                        <div className="form_signin">
                             <input name='email' type="email" placeholder='Enter your email' required />
                         </div>
-                        <input className='home_button' type="submit" value="Submit" />
+                        <div className="form_signin">
+                            <input name='password' type="password" placeholder='Enter your password' required />
+                        </div>
+                        <input className='home_button' type="submit" value="Sign in" />
                     </form>
                 </div>
-                <h1>Don't have an account? <Link to='/singup'>Sing up</Link></h1>
+                <h1>Don't have an account? <Link to='/signup'>Sing up</Link></h1>
             </section>
         </Helmet>
     )
