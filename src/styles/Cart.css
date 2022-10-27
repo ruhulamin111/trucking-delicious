@@ -1,9 +1,20 @@
 .cart_table table {
-    border: 1px solid gray;
-
+    width: 100%;
+    margin: 2rem 0;
 }
 
-.cart_table {
-    width: 100%;
+.cart_table thead {
+    border-bottom: 2px solid gray;
+}
 
+.cart_table th {
+    padding: 1rem;
+}
+
+.cart_table tbody {
+    text-align: center;
+}
+
+.cart_table td {
+    padding: 1rem;
 }
